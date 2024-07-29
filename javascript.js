@@ -17,7 +17,7 @@ function getComputerChoice() {
 
 function getHumanChoice() {
     
-    let choice = prompt("Choose the following attack: rock, paper, scissors");
+    let playerChoice = prompt("Choose the following attack: rock, paper, scissors");
     if (choice === 'rock') {
         return 'rock';
     } else if (choice === 'paper') {
