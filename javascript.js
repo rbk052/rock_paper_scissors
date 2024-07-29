@@ -15,4 +15,20 @@ function getComputerChoice() {
 
 }
 
-console.log(getComputerChoice());
+function getHumanChoice() {
+    
+    let choice = prompt("Choose the following attack: rock, paper, scissors");
+    if (choice === 'rock') {
+        return 'rock';
+    } else if (choice === 'paper') {
+        return 'paper';
+    } else if (choice === 'scissors') {
+        return 'scissors';
+    } else {
+        console.log('oops, somethings gone wrong');
+    }
+}
+
+
+console.log("computer: " + getComputerChoice());
+console.log("player: " + getHumanChoice());
